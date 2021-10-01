@@ -1,0 +1,40 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+}
+<!--=================================
+owl-custom -->
+
+<section id="@page.Id" style="position: relative; overflow: initial;" class="owl-custom white-bg page-section-ptb">
+    <div class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        <div class="row">
+            <div class="owl-carousel-12">
+                @foreach (var item in page.carouselContent)
+                {
+                    <div class="item">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="custom-content">
+                                <h2 class="text-blue mb-30">@item.title</h2>
+                                @Html.Raw(item.htmlContent)
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <img class="img-responsive" src="@Umbraco.Media(item.image.ToString()).umbracoFile" alt="">
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=================================
+ owl-custom -->

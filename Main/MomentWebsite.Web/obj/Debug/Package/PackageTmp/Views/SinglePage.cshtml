@@ -1,0 +1,212 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "_SinglePageLayoutLevelOne.cshtml";
+}
+@{
+    var parent = CurrentPage.Children.Where("Visible");
+    foreach (var child in parent)
+    {
+        var docTypeString = child.DocumentTypeAlias.ToString();
+        if (docTypeString.Equals("moduleA"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("ModuleContentImagePartial")
+        }
+        else if (docTypeString.Equals("fullwidth_Header"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("FullWidthHeaderPartial")
+        }
+        else if (docTypeString.Equals("moduleBackImageText"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("ModuleBackImageTextPartial")
+        }
+        else if (docTypeString.Equals("panorama_2Col_box_picture"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("Panorama2ColBoxPicturePartial")
+        }
+        else if (docTypeString.Equals("col_text_leftsubtitle"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("TwoColTextLeftTitlePartial")
+        }
+        else if (docTypeString.Equals("panorama_callToAction"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("PanoramaCallToActionPartial")
+        }
+        else if (docTypeString.Equals("panorama_spacing_20px"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("PanoramaSpacingPartial")
+        }
+        else if (docTypeString.Equals("columns_Text_Picture_AboutMe"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("TwoColumnsTextPictureAboutMePartial")
+        }
+        else if (docTypeString.Equals("columns_Text_Picture1"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("TwoColumnsTextPictureOnePartial")
+        }
+        else if (docTypeString.Equals("columns_text_icon"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("ThreeColumnsTextIconPartial")
+        }
+        else if (docTypeString.Equals("fullwidth_Slider_text_picture"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("FullwidthSliderTextPicturePartial")
+        }
+        else if (docTypeString.Equals("fullwidth_Blog"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("FullwidthBlogPartial")
+        }
+        else if (docTypeString.Equals("fullwidth_Map"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("FullWidthMapPartial")
+        }
+        else if (docTypeString.Equals("columns_Text_Picture"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("FourColumnsTextPicturePartial")
+        }
+        else if (docTypeString.Equals("fullwidth_Clients"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("FullWidthClientsPartial")
+        }
+        else if (docTypeString.Equals("columns_Text_Picture_2"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("TwoColumnsTextPictureTwoPartial")
+        }
+        else if (docTypeString.Equals("fullwidth_News"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("FullWidthNewsPartial")
+        }
+        else if (docTypeString.Equals("columns_Counter"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("FourColumnsCounterPartial")
+        }
+        else if (docTypeString.Equals("columns_Text"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("ThreeColumnsTextPartial")
+        }
+        else if (docTypeString.Equals("fourColumns_Text_Icon"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("FourColumnsTextIconPartial")
+        }
+        else if (docTypeString.Equals("our_Team"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("OurTeamPartial")
+        }
+        else if (docTypeString.Equals("columns_Text_Picture_3"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("ColumnsTextPictureThreePartial")
+        }
+        else if (docTypeString.Equals("our_History"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("OurHistoryPartial")
+        }
+        else if (docTypeString.Equals("fullwidth_product"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("FullWidthProductPartial")
+        }
+        else if (docTypeString.Equals("columns_Tabs_Video"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("TwoColumnsTabsVideoPartial")
+        }
+        else if (docTypeString.Equals("column_Header_video"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("OneColumnHeaderVideoPartial")
+        }
+        else if (docTypeString.Equals("fullwidth_Videobackground"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("FullWidthVideobackgroundPartial")
+        }
+        else if (docTypeString.Equals("columns_FAQ"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("TwoColumnsFaqPartial")
+        }
+        else if (docTypeString.Equals("columns_Levels"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("FourColumnsLevelPartial")
+        }
+        else if (docTypeString.Equals("newsletter_Signup"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("NewsletterSignupPartial")
+        }
+        else if (docTypeString.Equals("one_ImageScreen_Carousel"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("OneImageScreenCarouselPartial")
+        }
+        else if (docTypeString.Equals("three_ImageScreen_Carousel"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("ThreeImageScreenCarouselPartial")
+        }
+        else if (docTypeString.Equals("five_ImageScreen_Carousel"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("FiveImageScreenCarouselPartial")
+        }
+        else if (docTypeString.Equals("columns_Contact"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("TwoColumnsContactPartial")
+        }
+        else if (docTypeString.Equals("four_TextPictures"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("FourTextPicturesPartial")
+        }
+        else if (docTypeString.Equals("columns_leftText_rightInput"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("TwoColLeftTextRightInputPartial")
+        }
+        else if (docTypeString.Equals("columns_DroppingText"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("TwoColDroppingTextPartial")
+        }
+        else if (docTypeString.Equals("panoramic_Ten_Pictures"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("PanoramicTenPicturesPartial")
+        }
+        else if (docTypeString.Equals("fourColumns_Text_Icon2"))
+        {
+            ViewBag.Page = child;
+            @Html.Partial("FourColumnsTextIconTwoPartial")
+        }//
+        else
+        {
+            ViewBag.Page = child;
+            @Html.Partial("FullwidthGenericHtmlPartial")
+        }
+
+    }
+}

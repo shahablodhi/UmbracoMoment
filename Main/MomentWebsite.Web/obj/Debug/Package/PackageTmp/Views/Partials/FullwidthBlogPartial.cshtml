@@ -1,0 +1,166 @@
+﻿@using MomentWebsite.Web.Business
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+    var buttonName = "";
+    var buttonUrl = "";
+    var theme = page.selectTheme;
+}
+
+
+@{
+    var selectedTheme = Utility.GetThemeColorMap(theme);
+
+}
+@functions
+{
+    private void SetButtonNameAndUrl(dynamic button, out String name, out String url)
+    {
+        if (button.Length == 0 || button[0] == null || button[1] == null)
+        {
+            name = String.Empty;
+            url = String.Empty;
+            return;
+        }
+        if (button[0].ToString().Contains("/"))
+        {
+            url = button[0].ToString();
+            name = button[1].ToString();
+        }
+        else
+        {
+            url = button[1].ToString();
+            name = button[0].ToString();
+        }
+    }
+
+}
+@{
+    SetButtonNameAndUrl(page.button, out buttonName, out buttonUrl);
+}
+<!--=================================
+blog -->
+<style>
+   .our-blog .blog-box-info {
+        background:@(selectedTheme==1?"#FCD2AC":selectedTheme==2?"#F15A23":selectedTheme==3?"#E2E2E2":selectedTheme==4?"#383838":selectedTheme==5?"#ffffff":page.backColorCode);
+
+    }
+</style>
+<section id="@page.Id" style="position: relative; overflow: initial;" class="our-blog hover-direction white-bg">
+    <div class="container-fluid">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="blog-box-info">
+                    <h1 style="font-size: 36pt; color: @(selectedTheme == 1 ? "#F15A22" : selectedTheme == 2 ? "#ffffff" : selectedTheme == 3 ? "#E2E2E2" : selectedTheme == 4 ? "#ffffff" : selectedTheme == 5 ? "#ffffff" : "#ffffff")" class="Graphik-Bold-Web">@page.title</h1>
+                    <span style="color: @(selectedTheme == 1 ? "#F15A22" : selectedTheme == 2 ? "#ffffff" : selectedTheme == 3 ? "#E2E2E2" : selectedTheme == 4 ? "#ffffff" : selectedTheme == 5 ? "#ffffff" : "#ffffff")" class=""> Read what we say in our blog</span>
+                    <p style="color: @(selectedTheme == 1 ? "#F15A22" : selectedTheme == 2 ? "#ffffff" : selectedTheme == 3 ? "#E2E2E2" : selectedTheme == 4 ? "#ffffff" : selectedTheme == 5 ? "#ffffff" : "#ffffff")" class="text-white pt-15 pb-20">@page.subTitle</p>
+                    <a href="@buttonUrl" class="button button-white">
+                        <span>@buttonName</span>
+                        <i class="fa fa-hand-o-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="blog-box-image">
+                    <div class="portfolio-item">
+                        <img class="img-responsive" src="@Umbraco.Media(page.topLeftImage.ToString()).umbracoFile" alt="">
+                        <div class="portfolio-caption text-right">
+                            <a href="#">Lorem ipsum dolor sit </a>
+                            <ul class="port-tag">
+                                <li><a href="#"><i class="fa fa-user"></i> By The Corps</a></li>
+                                <li><a href="#"><i class="fa fa-comments-o"></i> 5 Comments</a></li>
+                                <li><a href="#"><i class="fa fa-folder-open"></i> Business</a></li>
+                            </ul>
+                            <a href="#" class="button-border">
+                                <span>Read view</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="blog-box-image">
+                    <div class="portfolio-item">
+                        <img class="img-responsive" src="@Umbraco.Media(page.topRightImage.ToString()).umbracoFile" alt="">
+                        <div class="portfolio-caption text-right">
+                            <a href="#">Lorem ipsum dolor sit </a>
+                            <ul class="port-tag">
+                                <li><a href="#"><i class="fa fa-user"></i> By The Corps</a></li>
+                                <li><a href="#"><i class="fa fa-comments-o"></i> 5 Comments</a></li>
+                                <li><a href="#"><i class="fa fa-folder-open"></i> Business</a></li>
+                            </ul>
+                            <a href="#" class="button-border">
+                                <span>Read view</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="blog-box-image">
+                    <div class="portfolio-item">
+                        <img class="img-responsive" src="@Umbraco.Media(page.bottomLeftImage.ToString()).umbracoFile" alt="">
+                        <div class="portfolio-caption text-right">
+                            <a href="#">Lorem ipsum dolor sit </a>
+                            <ul class="port-tag">
+                                <li><a href="#"><i class="fa fa-user"></i> By The Corps</a></li>
+                                <li><a href="#"><i class="fa fa-comments-o"></i> 5 Comments</a></li>
+                                <li><a href="#"><i class="fa fa-folder-open"></i> Business</a></li>
+                            </ul>
+                            <a href="#" class="button-border">
+                                <span>Read view</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="blog-box-image">
+                    <div class="portfolio-item">
+                        <img class="img-responsive" src="@Umbraco.Media(page.bottomCenterImage.ToString()).umbracoFile" alt="">
+                        <div class="portfolio-caption text-right">
+                            <a href="#">Lorem ipsum dolor sit </a>
+                            <ul class="port-tag">
+                                <li><a href="#"><i class="fa fa-user"></i> By The Corps</a></li>
+                                <li><a href="#"><i class="fa fa-comments-o"></i> 5 Comments</a></li>
+                                <li><a href="#"><i class="fa fa-folder-open"></i> Business</a></li>
+                            </ul>
+                            <a href="#" class="button-border">
+                                <span>Read view</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="blog-box-image">
+                    <div class="portfolio-item">
+                        <img class="img-responsive" src="@Umbraco.Media(page.bottomRightImage.ToString()).umbracoFile" alt="">
+                        <div class="portfolio-caption text-right">
+                            <a href="#">Lorem ipsum dolor sit </a>
+                            <ul class="port-tag">
+                                <li><a href="#"><i class="fa fa-user"></i> By The Corps</a></li>
+                                <li><a href="#"><i class="fa fa-comments-o"></i> 5 Comments</a></li>
+                                <li><a href="#"><i class="fa fa-folder-open"></i> Business</a></li>
+                            </ul>
+                            <a href="#" class="button-border">
+                                <span>Read view</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=================================
+blog -->

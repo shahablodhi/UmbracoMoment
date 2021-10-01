@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\obj\Debug\Package\PackageTmp" />
+  <setAcl path="E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\obj\Debug\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\obj\Debug\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

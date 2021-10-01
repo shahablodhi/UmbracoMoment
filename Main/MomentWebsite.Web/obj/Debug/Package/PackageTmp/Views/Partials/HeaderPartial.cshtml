@@ -1,0 +1,269 @@
+﻿@using System.Configuration
+@using Microsoft.Owin.Security.Provider
+@using MomentWebsite.Web.Resources
+@using umbraco.MacroEngines
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@functions
+{
+    public int GetNodeCount()
+    {
+        var root = CurrentPage.AncestorOrSelf(1);
+        var res = CurrentPage.Url.ToString().Split('/')[1];
+        var count = 0;
+        var isFirstPage = true;
+        foreach (var item in root.Children.Where("Visible"))
+        {
+            count++;
+            var url = item.Url.ToString().Split('/')[1];
+
+            if (url.ToString().Equals(res))
+            {
+                isFirstPage = false;
+                break;
+            }
+        }
+        if (isFirstPage)
+        {
+            count = 0;
+        }
+        return count;
+    }
+    public string GetCurrentUrl()
+    {
+        var currUrl = CurrentPage.Url.ToString();
+        if (currUrl.Equals("/"))
+        {
+            currUrl = "noRedirect";
+        }
+        return currUrl;
+    }
+
+    public bool IsLoggedIn()
+    {
+        var token = HttpContext.Current.Response.Cookies.Get(AppInternalStrings.TokenCookie);
+        var status = token != null && (token.Value != null && (!token.Value.Equals(String.Empty)));
+        return status;
+    }
+
+}
+<!--=================================
+header -->
+
+
+@{
+    var root = CurrentPage.AncestorOrSelf(1);
+    var offset = 0;
+    //just adjust this colWidth to set the sticky menu spacing
+    const int colWidth = 2;
+    var redirectUrl = ConfigurationManager.AppSettings["OldSiteUrl"];
+
+}
+<style>
+    #animated-slider .slider-content span {
+        color: #FF5500;
+    }
+
+    .header-3 .topbar {
+        /*background: #FF5500;*/
+    }
+
+    .header-3 .topbar-right ul li {
+        border-right: 0px solid;
+        border-left: 0px solid #565656;
+    }
+
+    .fa.text-blue {
+        color: white;
+    }
+
+    .top-news p {
+        font-size: 14px;
+        color: #fff;
+        padding-top: 6px;
+    }
+</style>
+
+<header id="header" class="header-3">
+    <div id="registerModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Select Profil Type</h4>
+                </div>
+                <div class="modal-body">
+                    <p> "Opret en Kandidat profil" eller "Opret en Virksomhedsprofil"</p>
+                </div>
+                <div class="modal-footer">
+                    @*<a href="/hiddenpages/register/" class="button">*@
+                    <a href="@(redirectUrl+"/vikar/opret-profil/")" class="button">
+                        <span>Kandidat</span>
+                    </a>
+                    <a href="#" class=" button disabled">
+                        <span>Virksomhed</span>
+                    </a>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    @*<div style="border-left: 0;" class="language">
+                            <ul>
+                                <li class="language-current">
+                                    <a href="#"> Danish <i class="fa fa-angle-down"></i></a>
+                                    <ul class="language-down">
+                                        <li><a href="#">English</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="padding: 0px 0px 8px 15px;" class="top-news">
+                            <b>Latest News :</b>
+                            <div class="owl-carousel-14">
+                                <div class="item">
+                                    <p>Lorem ipsum dolor sit amet. </p>
+                                </div>
+                                <div class="item">
+                                    <p>Allum ea, amet quibusdam totam.</p>
+                                </div>
+                                <div class="item">
+                                    <p>Fuga ratione magnam asperiores.</p>
+                                </div>
+                            </div>
+                        </div>*@
+                    &nbsp;
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="topbar-right text-right">
+                        <ul>
+                            <li id="logInListItem">
+                                <a id="MainLoginID" class="login" href="@(redirectUrl+"/login/")"><i class="fa fa-lock text-blue"></i> Login</a>
+                                @*<div class="login-1 login-open text-left">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input id="name" type="text" class="form-control" name="username" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input id="pass" type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                    <div class="remember-checkbox">
+                        <input type="checkbox" name="one" id="one" />
+                        <label class="remember" for="one">Remember me</label>
+                    </div>
+                    <a href="#" class="button">
+                            <span>Log in</span>
+                        </a>
+                    <button id="submitLogin">Log in</button>
+                    <span>-or-</span>
+
+                    <a href="javascript:void(0)" data-toggle="modal" data-target="#registerModal"><i class="fa fa-user text-blue"></i> Register</a>
+                    <a href="#">Forgot password ?</a>
+
+
+                    <div class="login-with">
+                        <span>Log in With: </span>
+                        <a class="fb" href="#"><i class="fa fa-facebook"></i></a>
+                        <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                        <a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a>z
+                    </div>
+                </div>*@
+                            </li>
+                            
+                            <li id="profileListItem"><a href="@(redirectUrl + "/vikar/profil/")"><i class="fa fa-user text-blue"></i> Profil</a></li>
+                            <li id="registerListItem"><a href="@(redirectUrl + "/vikar/opret-profil/")"><i class="fa fa-user text-blue"></i> Register</a></li>
+                            @*<li id="logOffListItem"><a href="javascript:void(0)" onclick=" return logOff() "><i class="fa fa-user text-blue"></i> Log off</a></li>*@
+                            @*<li id="registerListItem"><a href="javascript:void(0)" data-toggle="modal" data-target="#registerModal"><i class="fa fa-user text-blue"></i> Register</a></li>*@                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <!-- menu start -->
+        <nav id="menu-1" class="mega-menu desktopTopFixed">
+            <!-- menu list items container -->
+            <section style="position: static;" class="menu-list-items">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <!-- menu logo -->
+                            <ul class="menu-logo">
+                                <li>
+                                    <a href="/"><img id="logo_dark_img" src="https://www.moment.dk/css/images/Moment_BM.svg" alt="logo"> </a>
+                                </li>
+                            </ul>
+                            <!-- menu links -->
+                            <ul class="menu-links">
+                                @foreach (var family in root.Children.Where("Visible"))
+                                {
+                                    var hideInNavigation = family.Url.ToString().Contains(AppInternalStrings.Profile) ? (family.hideInNavi == true || !IsLoggedIn()) : (family.hideInNavi == true);
+                                    if (!hideInNavigation)
+                                    {
+                                        <li>
+                                            <a href="javascript:void(0)" onclick="closeNeighbours(this)" data-toggle="collapse" data-sample="#headerContent-@offset" data-target="#headerContent-@offset"> @family.Name <span class="fa fa-angle-down fa-indicator"></span></a>
+                                            <ul class="drop-down-multilevel">
+                                                @foreach (var parent in family.Children.Where("Visible"))
+                                                {
+                                                    <li>
+                                                        <a href="javascript:void(0)">@parent.Name<i class="fa fa-angle-right fa-indicator"></i> </a>
+                                                        <!-- drop down second level -->
+                                                        <ul class="drop-down-multilevel">
+                                                            @foreach (var child in parent.Children.Where("Visible"))
+                                                            {
+                                                                hideInNavigation = (child.hideInNavi == true);
+                                                                if (!hideInNavigation)
+                                                                {                                                                    
+                                                                    <li><a href="@child.Url">@child.Name</a></li>
+                                                                }
+                                                            }
+                                                        </ul>
+                                                    </li>
+                                                }
+                                            </ul>
+                                        </li>
+                                    }
+                                    offset = offset + colWidth;
+
+                                }
+                                <li>
+                                    <div class="search-3">
+                                        <a class="search-btn not_click" href="javascript:void(0);">Search Button</a>
+                                        <div class="search-3-box not-click">
+                                            <input type="text" class="not-click" placeholder="Search" value="" name="s">
+                                            <i class="fa fa-search"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </nav>
+        <!-- menu end -->
+    </div>
+</header>
+<div id="jsTransferer" style="display: none;" data-nodecount="@GetNodeCount()"
+     data-stamdata="@MomentWebsite.Web.Resources.AppInternalStrings.stamdata" data-url="@(GetCurrentUrl())"
+     data-servicebase="@ConfigurationManager.AppSettings["ModsBaseAddress"]"
+     data-tokencookie="@MomentWebsite.Web.Resources.AppInternalStrings.TokenCookie"
+     data-authority="@ConfigurationManager.AppSettings["IdentityServerBaseAddress"]"
+     data-clientid="@ConfigurationManager.AppSettings["ClientID"]"
+     data-redirecturl="@ConfigurationManager.AppSettings["OldSiteUrl"]">
+</div>
+<!--=================================
+ header -->
+
+<script src="~/scripts/SessionController.js"></script>
+<script src="~/scripts/OAUTH/oidc-token-manager.js"></script>

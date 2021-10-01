@@ -1,0 +1,87 @@
+﻿@using MomentWebsite.Web.Business
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+    var theme = page.selectTheme;
+}
+
+@{
+    var selectedTheme = Utility.GetThemeColorMap(theme);
+
+}
+<!--=================================
+ About-->
+
+<section id="@page.Id" style="position: relative; overflow: initial;background:@(selectedTheme==1?"#FCD2AC":selectedTheme==2?"#F15A23":selectedTheme==3?"#E2E2E2":selectedTheme==4?"#383838":page.backColorCode)" class="about page-section-ptb">
+    <div class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="feature-3">
+                    @if (page.HasValue("image1"))
+                    {
+
+
+                        <div class="feature-3-image mb-20">
+                            <img class="img-responsive" src="@Umbraco.Media(page.image1.ToString()).umbracoFile" alt="">
+                        </div>
+                    }
+                    <div class="feature-3-info">
+                        <h5 class="text-back">@page.title1</h5>
+                        @page.htmlContent1
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="feature-3">
+                    @if (page.HasValue("image2"))
+                    {
+                        <div class="feature-3-image mb-20">
+                            <img class="img-responsive" src="@Umbraco.Media(page.image2.ToString()).umbracoFile" alt="">
+                        </div>
+                    }
+                    <div class="feature-3-info">
+                        <h5 class="text-back">@page.title2</h5>
+                        @page.htmlContent2
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="feature-3">
+                    @if (page.HasValue("image3"))
+                    {
+                        <div class="feature-3-image mb-20">
+                            <img class="img-responsive" src="@Umbraco.Media(page.image3.ToString()).umbracoFile" alt="">
+                        </div>
+                    }
+                    <div class="feature-3-info">
+                        <h5 class="text-back">@page.title3</h5>
+                        @page.htmlContent3
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="feature-3">
+                    @if (page.HasValue("image4"))
+                    {
+                        <div class="feature-3-image mb-20">
+                            <img class="img-responsive" src="@Umbraco.Media(page.image4.ToString()).umbracoFile" alt="">
+                        </div>
+                    }
+                    <div class="feature-3-info">
+                        <h5 class="text-back">@page.title4</h5>
+                        @page.htmlContent4
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=================================
+ About-->

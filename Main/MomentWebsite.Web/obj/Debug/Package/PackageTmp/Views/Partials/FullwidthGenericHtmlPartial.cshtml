@@ -1,0 +1,15 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+}
+<section>
+    <div style="position: relative; overflow: initial;" id="@page.Id" class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        @page.htmlContent
+    </div>
+</section>

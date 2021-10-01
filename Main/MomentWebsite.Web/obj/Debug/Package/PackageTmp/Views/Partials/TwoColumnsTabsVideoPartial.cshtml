@@ -1,0 +1,62 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+    var counter = 0;
+}
+<!--=================================
+ Services Details -->
+
+<section id="@page.Id" style="position: relative; overflow: initial;" class="service-page-tab white-bg page-section-pb">
+    <div class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="section-title-1 text-center">
+                    <h1 class="text-blue">@page.title</h1>
+                    <div class="title-line"></div>
+                    <p>@page.subTitle</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div id="tabs">
+                    <ul class="tabs">
+                        <li data-tabs="tabSer1" class="active"> @page.title1</li>
+                        <li data-tabs="tabSer2"> @page.title2</li>
+                        <li data-tabs="tabSer3"> @page.title3</li>
+                        <li data-tabs="tabSer4"> @page.title4</li>
+                    </ul>
+                    <div id="tabSer1" class="tabcontent">
+                        <p>@page.text1</p>
+                    </div>
+                    <div id="tabSer2" class="tabcontent">
+                        <p>@page.text2</p>
+
+                    </div>
+                    <div id="tabSer3" class="tabcontent">
+                        <p>@page.text3</p>
+                    </div>
+                    <div id="tabSer4" class="tabcontent">
+                        <p>@page.text4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <video style="width: 100%; height: 100%;" poster="@Umbraco.Media(page.thumbnail.ToString()).umbracoFile" controls="controls" preload="none">
+                    <source type="video/mp4" src="@Umbraco.Media(page.mp4.ToString()).umbracoFile"/>
+                    <source type="video/webm" src="@Umbraco.Media(page.webm.ToString()).umbracoFile"/>
+                    <source type="video/ogg" src="@Umbraco.Media(page.ogv.ToString()).umbracoFile"/>
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=================================
+ Services Details-->

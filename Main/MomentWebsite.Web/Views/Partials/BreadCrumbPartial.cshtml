@@ -1,0 +1,32 @@
+﻿@using MomentWebsite.Web.Models
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+
+    var root = CurrentPage.AncestorOrSelf(1);
+    var root2 = CurrentPage.AncestorOrSelf();
+    var stackItems = new Stack<MultipleSubmitAttribute>();
+
+    var page = CurrentPage;
+}
+<ul class="page-breadcrumb">
+    <li>&nbsp;</li>
+    @*<li>
+        <a href="@root.Url.ToString()"><i class="fa fa-home"></i> @root.Name</a>
+    </li>
+    @for (;;)
+    {
+        stackItems.Push(new MultipleSubmitAttribute { Name = page.Name, Argument = page.Url });
+        page = page.Parent;
+        if (page.Parent == null)
+        {
+            break;
+        }
+    }
+    @foreach (var item in stackItems)
+    {
+        <li>
+            <i class="fa fa-angle-double-right"></i>
+            <a href="@item.Argument">@item.Name</a>
+        </li>
+    }*@
+</ul>

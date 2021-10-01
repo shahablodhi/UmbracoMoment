@@ -1,0 +1,32 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+    var counter = 0;
+    var overlayText = page.overlayText;
+}
+<!--=================================
+ portfolio -->
+
+<section id="@page.Id" class="portfolio-3 white-bg">
+    <div class="container-fluid fluid-padd">
+        <div class="isotope popup-gallery full-screen columns-5">
+            @foreach (var image in page.images)
+            {
+                <div class="grid-item photography illustration">
+                    <div class="portfolio-item">
+                        <img src="@Umbraco.Media(image.ToString()).umbracoFile" alt="">
+                        <div class="portfolio-overlay">
+                            <p>
+                                <span>@overlayText[counter]</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                counter++;
+            }
+        </div>
+    </div>
+</section>
+
+<!--=================================
+ portfolio -->

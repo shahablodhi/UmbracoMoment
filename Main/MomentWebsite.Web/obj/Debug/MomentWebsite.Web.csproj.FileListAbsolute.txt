@@ -1,0 +1,294 @@
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\ApplicationInsights.config
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\roslyn\csc.exe
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\roslyn\System.Collections.Immutable.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\roslyn\System.Reflection.Metadata.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\roslyn\vbc.exe
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\roslyn\VBCSCompiler.exe
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\roslyn\VBCSCompiler.exe.config
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\MomentWebsite.Web.dll.config
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\MomentWebsite.Web.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\MomentWebsite.Web.pdb
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.AI.Agent.Intercept.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.AI.DependencyCollector.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.AI.Web.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.AI.WindowsServer.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.ApplicationInsights.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.AI.DependencyCollector.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.AI.Web.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.AI.WindowsServer.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.ApplicationInsights.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\obj\Debug\MomentWebsite.Web.csprojResolveAssemblyReference.cache
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\obj\Debug\MomentWebsite.Web.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\obj\Debug\MomentWebsite.Web.pdb
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\AutoMapper.Net4.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\AutoMapper.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\businesslogic.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\ClientDependency.Core.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\ClientDependency.Core.Mvc.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\cms.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\controls.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\CookComputing.XmlRpcV2.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Examine.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\HtmlAgilityPack.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\ICSharpCode.SharpZipLib.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\ImageProcessor.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\ImageProcessor.Web.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\interfaces.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Log4Net.Async.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\log4net.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Lucene.Net.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\MarkdownSharp.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.ApplicationBlocks.Data.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.AspNet.Identity.Core.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.CodeAnalysis.CSharp.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.CodeAnalysis.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.IO.RecyclableMemoryStream.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.Owin.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.Owin.Security.Cookies.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.Owin.Security.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.Owin.Security.OAuth.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\MiniProfiler.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\MySql.Data.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Newtonsoft.Json.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Owin.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Semver.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\SQLCE4Umbraco.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Collections.Immutable.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Data.SqlServerCe.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Data.SqlServerCe.Entity.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Net.Http.Formatting.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Reflection.Metadata.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Threading.Tasks.Dataflow.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Web.Helpers.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Web.Http.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Web.Http.WebHost.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Web.Mvc.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Web.Razor.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Web.WebPages.Deployment.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Web.WebPages.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Web.WebPages.Razor.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\TidyNet.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Umbraco.Core.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\umbraco.DataLayer.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\umbraco.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\umbraco.editorControls.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\umbraco.MacroEngines.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Umbraco.ModelsBuilder.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\umbraco.providers.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Umbraco.Web.UI.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\UmbracoExamine.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\AutoMapper.pdb
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\AutoMapper.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\AutoMapper.Net4.pdb
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\businesslogic.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\ClientDependency.Core.pdb
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\ClientDependency.Core.Mvc.pdb
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\cms.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\controls.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Examine.pdb
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\HtmlAgilityPack.pdb
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\HtmlAgilityPack.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\interfaces.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Lucene.Net.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.AspNet.Identity.Core.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.IO.RecyclableMemoryStream.pdb
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.Owin.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.Owin.Security.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.Owin.Security.Cookies.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Microsoft.Owin.Security.OAuth.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\MiniProfiler.pdb
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\MiniProfiler.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Newtonsoft.Json.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\SQLCE4Umbraco.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Net.Http.Formatting.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Threading.Tasks.Dataflow.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Web.Helpers.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Web.Http.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Web.Http.WebHost.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Web.Mvc.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Web.Razor.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Web.WebPages.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Web.WebPages.Deployment.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\System.Web.WebPages.Razor.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\umbraco.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Umbraco.Core.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\umbraco.DataLayer.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\umbraco.editorControls.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\umbraco.MacroEngines.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Umbraco.ModelsBuilder.pdb
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\umbraco.providers.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\Umbraco.Web.UI.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Web\bin\UmbracoExamine.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\ApplicationInsights.config
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\roslyn\csc.exe
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\roslyn\System.Collections.Immutable.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\roslyn\System.Reflection.Metadata.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\roslyn\vbc.exe
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\roslyn\VBCSCompiler.exe
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\roslyn\VBCSCompiler.exe.config
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\AutoMapper.Net4.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\MomentWebsite.Web.dll.config
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\MomentWebsite.Web.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\MomentWebsite.Web.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\AutoMapper.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\businesslogic.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\ClientDependency.Core.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\ClientDependency.Core.Mvc.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\cms.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\controls.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\CookComputing.XmlRpcV2.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Examine.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\HtmlAgilityPack.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\ICSharpCode.SharpZipLib.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\ImageProcessor.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\ImageProcessor.Web.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\interfaces.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Log4Net.Async.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\log4net.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Lucene.Net.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\MarkdownSharp.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.AI.Agent.Intercept.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.AI.DependencyCollector.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.AI.Web.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.AI.WindowsServer.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.ApplicationBlocks.Data.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.ApplicationInsights.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.AspNet.Identity.Core.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.CodeAnalysis.CSharp.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.CodeAnalysis.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.IO.RecyclableMemoryStream.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.Owin.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.Owin.Security.Cookies.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.Owin.Security.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.Owin.Security.OAuth.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.Web.Infrastructure.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\MiniProfiler.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\MySql.Data.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Newtonsoft.Json.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Owin.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Semver.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\SQLCE4Umbraco.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Collections.Immutable.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Data.SqlServerCe.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Data.SqlServerCe.Entity.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Net.Http.Formatting.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Reflection.Metadata.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Threading.Tasks.Dataflow.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Web.Helpers.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Web.Http.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Web.Http.WebHost.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Web.Mvc.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Web.Razor.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Web.WebPages.Deployment.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Web.WebPages.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Web.WebPages.Razor.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\TidyNet.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Umbraco.Core.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\umbraco.DataLayer.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\umbraco.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\umbraco.editorControls.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\umbraco.MacroEngines.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Umbraco.ModelsBuilder.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\umbraco.providers.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Umbraco.Web.UI.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\UmbracoExamine.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\AutoMapper.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\AutoMapper.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\AutoMapper.Net4.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\businesslogic.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\ClientDependency.Core.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\ClientDependency.Core.Mvc.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\cms.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\controls.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Examine.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\HtmlAgilityPack.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\HtmlAgilityPack.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\interfaces.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Lucene.Net.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.AI.DependencyCollector.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.AI.Web.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.AI.WindowsServer.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.ApplicationInsights.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.AspNet.Identity.Core.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.IO.RecyclableMemoryStream.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.Owin.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.Owin.Security.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.Owin.Security.Cookies.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.Owin.Security.OAuth.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\MiniProfiler.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\MiniProfiler.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Newtonsoft.Json.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\SQLCE4Umbraco.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Net.Http.Formatting.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Threading.Tasks.Dataflow.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Web.Helpers.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Web.Http.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Web.Http.WebHost.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Web.Mvc.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Web.Razor.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Web.WebPages.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Web.WebPages.Deployment.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.Web.WebPages.Razor.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\umbraco.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Umbraco.Core.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\umbraco.DataLayer.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\umbraco.editorControls.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\umbraco.MacroEngines.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Umbraco.ModelsBuilder.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\umbraco.providers.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Umbraco.Web.UI.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\UmbracoExamine.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\obj\Debug\MomentWebsite.Web.csprojResolveAssemblyReference.cache
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\obj\Debug\MomentWebsite.Web.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\obj\Debug\MomentWebsite.Web.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.Owin.Security.OpenIdConnect.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.Owin.Security.OpenIdConnect.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.IdentityModel.Tokens.Jwt.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\IdentityModel.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.ValueTuple.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\IdentityModel.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\System.ValueTuple.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\obj\Debug\MomentWebsite.Web.Resources.AppInternalStrings.resources
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\obj\Debug\MomentWebsite.Web.csproj.GenerateResource.Cache
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.IdentityModel.Logging.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.IdentityModel.Tokens.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.IdentityModel.Logging.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Web\bin\Microsoft.IdentityModel.Tokens.xml

@@ -1,0 +1,8 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic) ViewBag.Page;
+}
+<section style="background: @(page.backColorCode.Equals("")?"white":page.backColorCode)" >
+    <div style="padding-top: @(page.padding.Equals("")?"2rem":page.padding) ;" class="container">
+    </div>
+</section>

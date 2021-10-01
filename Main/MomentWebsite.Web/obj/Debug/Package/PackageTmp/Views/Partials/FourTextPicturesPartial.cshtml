@@ -1,0 +1,73 @@
+﻿
+@using MomentWebsite.Web.Business
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+    var theme = page.selectTheme;
+}
+
+@{
+    var selectedTheme = Utility.GetThemeColorMap(theme);
+
+}
+<!--=================================
+ About-->
+
+<section style="position: relative; overflow: initial;background:@(selectedTheme==1?"#FCD2AC":selectedTheme==2?"#F15A23":selectedTheme==3?"#E2E2E2":selectedTheme==4?"#383838":page.backColorCode)" id="@page.Id" class="page-section-ptb content-box">
+    <div class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        <div class="row mt-50">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="feature-16 mb-30">
+                    <div class="feature-3-image mb-20">
+                        <img alt="" src="@Umbraco.Media(page.image1.ToString()).umbracoFile" class="img-responsive">
+                    </div>
+                    <div class="feature-3-info">
+                        <h4 class="text-back">@page.title1</h4>
+                        <p>@page.text1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="feature-16 mb-30">
+                    <div class="feature-3-image mb-20">
+                        <img alt="" src="@Umbraco.Media(page.image2.ToString()).umbracoFile" class="img-responsive">
+                    </div>
+                    <div class="feature-3-info">
+                        <h4 class="text-back">@page.title2</h4>
+                        <p>@page.text2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-50">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="feature-16 mb-30">
+                    <div class="feature-3-image mb-20">
+                        <img alt="" src="@Umbraco.Media(page.image3.ToString()).umbracoFile" class="img-responsive">
+                    </div>
+                    <div class="feature-3-info">
+                        <h4 class="text-back">@page.title3</h4>
+                        <p>@page.text3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="feature-16 mb-30">
+                    <div class="feature-3-image mb-20">
+                        <img alt="" src="@Umbraco.Media(page.image4.ToString()).umbracoFile" class="img-responsive">
+                    </div>
+                    <div class="feature-3-info">
+                        <h4 class="text-back">@page.title4</h4>
+                        <p>@page.text4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

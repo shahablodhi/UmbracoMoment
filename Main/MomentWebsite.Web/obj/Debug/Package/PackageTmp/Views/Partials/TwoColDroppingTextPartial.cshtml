@@ -1,0 +1,78 @@
+﻿@using MomentWebsite.Web.Business
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+    var theme = page.selectTheme;
+    var buttonName = "";
+    var buttonUrl = "";
+
+}
+@functions
+{
+    private void SetButtonNameAndUrl(dynamic button, out String name, out String url)
+    {
+        if (button.Length == 0 || button[0] == null || button[1] == null)
+        {
+            name = String.Empty;
+            url = String.Empty;
+            return;
+        }
+        if (button[0].ToString().Contains("/"))
+        {
+            url = button[0].ToString();
+            name = button[1].ToString();
+        }
+        else
+        {
+            url = button[1].ToString();
+            name = button[0].ToString();
+        }
+    }
+
+}
+@{
+    SetButtonNameAndUrl(page.button, out buttonName, out buttonUrl);
+    var selectedTheme = Utility.GetThemeColorMap(theme);
+}
+
+
+<section id="@page.Id" style="position: relative; overflow: initial; background:@(selectedTheme==1?"#FCD2AC":selectedTheme==2?"#F15A23":selectedTheme==3?"#E2E2E2":selectedTheme==4?"#383838":page.backColorCode)" class="about white-bg">
+    <div class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        <div class="row">
+            <div class="col-lg-8 col-md-8">
+                <div class="custom-content-2 pt-70">
+                    <h2 class="mb-15">
+                        @page.title
+                        <div class="dropping-words dropping-words-1 mb-20">
+                            @foreach (var text in page.droppingText)
+                            {
+                                <span>@text</span>
+                            }
+
+                        </div>
+                    </h2>
+                    <h5 class="mb-20">@page.subTitle</h5>
+                    <div class="text-justify">
+                        @page.htmlContent
+                    </div>
+                 
+                    <a class="button mb-70 mt-20" href="@buttonUrl">
+                        <span>@buttonName</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <img class="img-responsive right-block" src="@Umbraco.Media(page.image.ToString()).umbracoFile" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=================================
+most Awesome- -->

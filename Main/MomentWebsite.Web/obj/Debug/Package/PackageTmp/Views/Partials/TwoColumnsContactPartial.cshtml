@@ -1,0 +1,95 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+}
+<!--=================================
+ contact-->
+
+<section id="@page.Id" style="position: relative; overflow: initial;" class="contact contact-2 white-bg page-section-ptb">
+    <div class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        <div class="row">
+            <div class="col-lg-8 col-md-8">
+                @*<div class="section-title-1">*@
+                <div>
+                    <h2 style="color: black;" class="text-blue">@page.title</h2>
+                    @*<div class="title-line"></div>*@
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                @*<div class="section-title-1">*@
+                <div>
+                    <h2 style="color: black;" class="text-blue">@page.title1</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-md-8">
+                <div class="text-left">
+                    <p>@page.subTitle</p><br/>
+                </div>
+                <div id="formmessage">Success/Error Message</div>
+                <form class="form-horizontal" id="contactform" role="form" method="post" action="php/contact-form.php">
+                    <div class="contact-form">
+                        <div class="section-field">
+                            <i class="fa fa-user"></i>
+                            <input id="name" type="text" placeholder="Name*" name="name">
+                        </div>
+                        <div class="section-field">
+                            <i class="fa fa-envelope-o"></i>
+                            <input type="email" placeholder="Email*" name="email">
+                        </div>
+                        <div class="section-field">
+                            <i class="fa fa-phone"></i>
+                            <input type="text" placeholder="Phone*" name="phone">
+                        </div>
+                        <div style="width: 100%" class="section-field">
+                            <i class="fa fa-phone"></i>
+
+                            <input type="text" placeholder="Emne*" name="subject">
+                        </div>
+                        <div class="section-field textarea">
+                            <i class="fa fa-pencil"></i>
+                            <textarea class="input-message" placeholder="Comment*" rows="7" name="message"></textarea>
+                        </div>
+                        <input type="hidden" name="action" value="sendEmail"/>
+                        <button id="submit" name="submit" type="submit" value="Send" class="button custom-color-darkgrey mt-15"><span> Send your message </span> </button>
+                    </div>
+                </form>
+                <div id="ajaxloader" style="display: none"><img class="center-block mt-30 mb-30" src="~/theme/moment-theme/Template/images/ajax-loader.gif" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 clearfix">
+                <p>@Html.Raw(page.subTitle1)</p>
+
+                <div class="contact-box mb-20 text-left clearfix">
+                    <i class="fa fa-phone"></i>
+                    <div class="info">
+                        <p>@Html.Raw(page.subTitle2)</p>
+                    </div>
+                </div>
+                <div class="contact-box mb-20 text-left clearfix">
+                    <i class="fa fa-envelope-o"></i>
+                    <div class="info">
+                        <p>@Html.Raw(page.subTitle3)</p>
+                    </div>
+                </div>
+                <div class="contact-box text-left clearfix">
+                    <i class="fa fa-fax"></i>
+                    <div class="info">
+                        <p>@Html.Raw(page.subTitle4)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=================================
+ contact-->

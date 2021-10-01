@@ -1,0 +1,206 @@
+﻿
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+<!--=================================
+ footer -->
+
+<footer class="footer-4 page-section-pt">
+    <div class="container">
+        <div class="row">
+            <div class="mt-10 col-lg-3 col-md-3 col-sm-6">
+                <ul>
+                    <li>
+                        <a class="custom-anchor-heavy">
+                            Moment
+                        </a>
+                    </li>
+                    <li>
+                        <a class="custom-anchor-light">
+                            Om Os
+                        </a>
+                    </li>
+                    <li>
+                        <a class="custom-anchor-light">
+                            Hvorfor Moment
+                        </a>
+                    </li>
+                    <li>
+                        <a class="custom-anchor-light">
+                            Job hos Moment
+                        </a>
+                    </li>
+                    <li>
+                        <a class="custom-anchor-light">
+                            Nyheder/Presse
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-10 col-lg-3 col-md-3 col-sm-6">
+                <ul>
+                    <li>
+                        <a class="custom-anchor-heavy">
+                            Find Job
+                        </a>
+                    </li>
+                    <li>
+                        <a class="custom-anchor-light">
+                            Find nyt job
+                        </a>
+                    </li>
+                    <li>
+                        <a class="custom-anchor-light">
+                            Min karriere
+                        </a>
+                    </li>
+                    <li>
+                        <a class="custom-anchor-light">
+                            De studerendes vikarbureau
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-10 col-lg-3 col-md-3 col-sm-6">
+                <ul>
+                    <li>
+                        <a class="custom-anchor-heavy">
+                            Find Kandidat
+                        </a>
+                    </li>
+                    <li>
+                        <a class="custom-anchor-light">
+                            Vikarløsninger
+                        </a>
+                    </li>
+                    <li>
+                        <a class="custom-anchor-light">
+                            Interim
+                        </a>
+                    </li>
+                    <li>
+                        <a class="custom-anchor-light">
+                            Rekruttering
+                        </a>
+                    </li>
+                    <li>
+                        <a class="custom-anchor-light">
+                            Brancher
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-10 col-lg-3 col-md-3 col-sm-6">
+                <ul>
+                    <li>
+                        <a class="custom-anchor-heavy">
+                            Netværk
+                        </a>
+                    </li>
+                    <li>
+                        <a class="custom-anchor-light">
+                            Young Professionels
+                        </a>
+                    </li>
+                    <li>
+                        <a class="custom-anchor-light">
+                            Young Digitals
+                        </a>
+                    </li>
+                    <li>
+                        <a class="custom-anchor-light">
+                            Young Finances
+                        </a>
+                    </li>
+                    <li>
+                        <a class="custom-anchor-light">
+                            High Performers
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-80">
+            <div class="col-lg-7">
+                <div class="custom-flex-center">
+                    <label class="custom-anchor-heavy">
+                        Tilmeld dig vores nyheder
+                    </label>
+                    <div style="flex: 1; margin-left: 1rem;padding-right: 6px" class="field-widget">
+                        <input style="background-color: transparent;" id="email" type="text" placeholder="Email" name="email">
+                    </div>
+                    <button id="submit" name="submit" type="submit" value="Send" class="custom-button-footer button-border pull-right clearfix"><span style="color: white;border-color: white;border-radius: 0;">Send</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-60 pb-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7">
+                    <p class="text-white mt-15">
+                        &copy;<span id="copyright">
+                            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                        </span> <a href="/"> Moment A/S</a> | Cookie - og privatlivspolitik | Persondatavilkår opdateret sep. 2014
+                    </p>
+                </div>
+                <div class="col-lg-5 col-md-5">
+                    <div class="footer-widget-social pull-right">
+                        <div style="display: flex;align-items: center">
+                            <label class="custom-label-light text-white">Følg os</label>
+                            <ul class="ml-10">
+                                <li><a href="#" data-tooltip="facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" data-tooltip="twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" data-tooltip="dribbble"><i class="fa fa-dribbble"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--=================================
+ footer -->
+<!--=================================
+ popup contact -->
+@*<div class="popup-contact">
+        <div class="popup-contact-box">
+            <a href="#" id="contact-btn"><i class="fa fa-envelope-o"></i></a>
+            <div class="contact-info clearfix">
+                <h4 class="mb-30">Send us a message</h4>
+                <div id="formmessage-2">Success/Error Message Goes Here</div>
+                <form class="form-horizontal" id="contactform-2" role="form" method="post" action="~/theme/moment-theme/Template/php/contact-form-2.php">
+                    <div class="contact-form">
+                        <div class="section-field">
+                            <div class="field-widget">
+                                <i class="fa fa-user"></i>
+                                <input id="name" type="text" placeholder="Name*" name="name">
+                            </div>
+                        </div>
+                        <div class="section-field">
+                            <div class="field-widget">
+                                <i class="fa fa-envelope-o"></i>
+                                <input type="email" placeholder="Email*" name="email">
+                            </div>
+                        </div>
+                        <div class="section-field clearfix">
+                            <div class="field-widget">
+                                <i class="fa fa-pencil"></i>
+                                <textarea class="input-message" placeholder="Comment*" rows="3" name="message"></textarea>
+                            </div>
+                        </div>
+                        <input type="hidden" name="action" value="sendEmail" />
+                        <button id="submit-2" name="submit" type="submit" value="Send" class="button-border pull-right clearfix"><span>Send</span></button>
+                    </div>
+                </form>
+                <div id="ajaxloader-2" style="display:none"><img class="center-block mt-30 mb-30" src="~/theme/moment-theme/Template/images/ajax-loader.gif" alt=""></div>
+            </div>
+        </div>
+    </div>*@
+
+<!--=================================
+ popup contact -->
+<!--=================================
+ action-box -->
+<div id="back-to-top"><a class="top arrow" href="#top"><i class="fa fa-long-arrow-up"></i></a></div>

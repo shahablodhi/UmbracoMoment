@@ -1,0 +1,76 @@
+﻿@using Microsoft.CodeAnalysis
+@using MomentWebsite.Web.Business
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+    string actionButton1Name;
+    string actionButton1Url;
+    string actionButton2Name;
+    string actionButton2Url;
+    var theme = page.selectTheme;
+}
+@functions
+{
+    private void SetButtonNameAndUrl(dynamic button, out String name, out String url)
+    {
+        if (button.Length == 0 || button[0] == null || button[1] == null)
+        {
+            name = String.Empty;
+            url = String.Empty;
+            return;
+        }
+        if (button[0].ToString().Contains("/"))
+        {
+            url = button[0].ToString();
+            name = button[1].ToString();
+        }
+        else
+        {
+            url = button[1].ToString();
+            name = button[0].ToString();
+        }
+    }
+
+
+}
+@{
+    var selectedTheme = Utility.GetThemeColorMap(theme);
+
+}
+@{
+    SetButtonNameAndUrl(page.actionButton1, out actionButton1Name, out actionButton1Url);
+    SetButtonNameAndUrl(page.actionButton2, out actionButton2Name, out actionButton2Url);
+
+}
+<section id="@page.Id" style="position: relative; overflow: initial;background:@(selectedTheme==1?"#FCD2AC":selectedTheme==2?"#F15A23":selectedTheme==3?"#E2E2E2":selectedTheme==4?"#383838":page.backColorCode) " class="action-box">
+    <div class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        <div class="row">
+            <div class="col-lg-8 col-md-8">
+                <h3 style="font-size: 36pt; @(selectedTheme == 1 ? "color:#F15A22;" : selectedTheme == 2 ? "color:#FFFFFF" : selectedTheme == 3 ? "color:#383838" : selectedTheme == 4 ? "color:#FFFFFFF" : "")" class="text-white Graphik-Bold-Web">@page.title</h3>
+                <p style="font-size: 16pt; @(selectedTheme == 1 ? "color:#F15A22;" : selectedTheme == 2 ? "color:#FFFFFF" : selectedTheme == 3 ? "color:#383838" : selectedTheme == 4 ? "color:#FFFFFFF" : "")" class="text-white Graphik-Regular-Web">@page.subTitle</p>
+            </div>
+            <div class="col-lg-4 col-md-4 text-right action-box-button">
+                @if (!page.hideButton1)
+                {
+                    <a href="@actionButton1Url" style="background-color: #F15A22; @(selectedTheme == 2 ? "box-shadow: 0 0 0 1px #FFFF inset" : "")" class="button button-white mt-15">
+                        <span class="Graphik-Bold-Web" style="color: white;">@actionButton1Name</span>
+                    </a>
+                }
+
+                @if (!page.hideButton2)
+                {
+                    <a target="_blank" style="background-color: #F15A22; @(selectedTheme == 2 ? "box-shadow: 0 0 0 1px #FFFF inset" : "")" href="@actionButton2Url" class="button button-black mt-15">
+                        <span class="Graphik-Bold-Web" style="color: white;">@actionButton2Name</span>
+                    </a>
+                }
+
+            </div>
+        </div>
+    </div>
+</section>

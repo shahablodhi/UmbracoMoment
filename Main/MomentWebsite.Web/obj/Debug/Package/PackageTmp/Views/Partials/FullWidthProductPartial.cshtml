@@ -1,0 +1,94 @@
+﻿@using MomentWebsite.Web.Business
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+    var counter = 0;
+    var theme = page.selectTheme;
+}
+
+
+@{
+    var selectedTheme = Utility.GetThemeColorMap(theme);
+
+}
+
+<section style="position: relative; overflow: initial;background: @(selectedTheme==1?"#FCD2AC":selectedTheme==2?"#F15A23":selectedTheme==3?"#E2E2E2":selectedTheme==4?"#383838":selectedTheme==5?"#ffffff":page.backColorCode)" class="mobile-slider-main gray-bg page-section-ptb">
+    <div class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div id="mobile-slider" class="clearfix mobile-slider">
+                    <div class="row col-md-4 col-xs-8 left-row text-right">
+                        <ul>
+                            @foreach (var feature in page.features)
+                            {
+                                <li class="highlight" data-index="@counter">
+                                    <div class="highlight-title">
+                                        <span aria-hidden="true" class="@feature.icon"></span>
+                                        <h5 class="mt-15">@feature.title</h5>
+                                    </div>
+                                    <p>@feature.text</p>
+                                </li>
+                                if (counter >= 2)
+                                {
+                                    counter = 0;
+                                    break;
+                                }
+                                counter++;
+                            }
+                        </ul>
+                    </div>
+                    <div class="row col-md-4 col-xs-8 right-row">
+                        <ul>
+                            @foreach (var feature in page.features)
+                            {
+                                if (counter >= 3)
+                                {
+                                    <li class="highlight" data-index="@counter">
+                                        <div class="highlight-title">
+                                            <span aria-hidden="true" class="@feature.icon"></span>
+                                            <h5 class="mt-15">@feature.title</h5>
+                                        </div>
+                                        <p>@feature.text</p>
+                                    </li>
+                                }
+                                if (counter >= 5)
+                                {
+                                    counter = 0;
+                                    break;
+                                }
+                                counter++;
+                            }
+                        </ul>
+                    </div>
+
+                    <div class="highlights-phone col-md-4 col-xs-12 wht">
+                        <div class="phone-holder">
+                            <div id="fon"></div>
+                            @foreach (var feature in page.features)
+                            {
+                                <div class="hgi @(counter == 0 ? "active" : "")" data-index="@counter">
+                                    <img width="258" height="480" src="@Umbraco.Media(feature.image.ToString()).umbracoFile" alt=""/>
+                                </div>
+                                if (counter >= 5)
+                                {
+                                    break;
+                                }
+                                counter++;
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--=================================
+our-feature  -->

@@ -1,0 +1,34 @@
+﻿@using MomentWebsite.Web.Business
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+    var theme = page.selectTheme;
+}
+
+@{
+    var selectedTheme = Utility.GetThemeColorMap(theme);
+    var themeclass = (selectedTheme == 1 ? "theme-lightorange" : selectedTheme == 2 ? "theme-darkorange" : "");
+}
+<section style="position: relative; overflow: initial;" class="custom-content-6 blue-bg @themeclass">
+    <div id="@page.Id" class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-offset-0 left-slide">
+                <span class="text-white">@page.subTitle</span>
+                <h2 class="Graphik-Black-Web ">@page.title</h2>
+                <p class="text-white">@page.textContent</p>
+            </div>
+            @if (page.HasProperty("backImage"))
+            {
+                <div class="col-xs-12 col-sm-6 col-md-6 pull-right right-slide">
+                    <img src="@Umbraco.Media(page.backImage.ToString()).umbracoFile" alt="">
+                </div>
+            }
+        </div>
+    </div>
+</section>

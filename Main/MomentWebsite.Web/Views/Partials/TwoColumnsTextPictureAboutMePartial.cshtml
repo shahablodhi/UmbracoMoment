@@ -1,0 +1,39 @@
+﻿@using MomentWebsite.Web.Business
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+    var theme = page.selectTheme;
+}
+
+@{
+    var selectedTheme = Utility.GetThemeColorMap(theme);
+
+}
+<!--=================================
+ About-->
+
+<section style="position: relative; overflow: initial;background:@(selectedTheme==1?"#FCD2AC":selectedTheme==2?"#F15A23":selectedTheme==3?"#E2E2E2":selectedTheme==4?"#383838":page.backColorCode)" id="@page.Id" class="about about-me page-section-ptb">
+    <div class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <img class="img-responsive mike-images" src="@Umbraco.Media(page.image.ToString()).umbracoFile" alt="">
+            </div>
+            <div class="col-lg-8 col-md-8">
+                <div class="custom-content">
+                    <h2 class="text-blue">@page.title</h2>
+                    <b>@page.subTitle</b>
+                    @page.htmlContent
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=================================
+ About-->

@@ -1,0 +1,11 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "_LayoutLevelOne.cshtml";
+}
+<script>
+    $(function () {
+        window.location.replace("@CurrentPage.Parent.Url");
+    })
+</script>
+
+

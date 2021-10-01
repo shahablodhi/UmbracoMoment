@@ -1,0 +1,69 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "_LayoutRoot.cshtml";
+}
+
+<style>
+    .loading-effect {
+        width: 100px;
+        height: 100px;
+    }
+
+        .loading-effect > span,
+        .loading-effect > span:before,
+        .loading-effect > span:after {
+            content: "";
+            display: block;
+            border-radius: 50%;
+            border: 3px solid #FF5500;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .loading-effect > span {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-left-color: transparent;
+            -webkit-animation: effect 2s infinite linear;
+            -moz-animation: effect 2s infinite linear;
+            -ms-animation: effect 2s infinite linear;
+            -o-animation: effect 2s infinite linear;
+            animation: effect 2s infinite linear;
+        }
+
+            .loading-effect > span:before {
+                width: 75%;
+                height: 75%;
+                border-right-color: transparent;
+            }
+
+            .loading-effect > span:after {
+                width: 50%;
+                height: 50%;
+                border-bottom-color: transparent;
+            }
+</style>
+
+<body>
+    <div class="page-wrapper">
+        <div id="preloader">
+            <div class="clear-loading loading-effect"> <span></span> </div>
+        </div>
+        @Html.Partial("HeaderPartial")
+        @Html.Partial("AfterHeaderMenuPartial")
+        <div style="" id="pageContent">
+            @RenderBody()
+        </div>
+        @Html.Partial("FooterPartial")
+        @Html.Partial("RenderScriptsPartial")
+    </div>
+
+</body>

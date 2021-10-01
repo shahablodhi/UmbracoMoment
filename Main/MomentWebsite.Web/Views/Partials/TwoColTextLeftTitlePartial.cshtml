@@ -1,0 +1,38 @@
+﻿@using MomentWebsite.Web.Business
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+    var theme = page.selectTheme;
+}
+
+@{
+    var selectedTheme = Utility.GetThemeColorMap(theme);
+
+}
+<section id="@page.Id" style="position: relative; overflow: initial; background:@(selectedTheme==1?"#FCD2AC":selectedTheme==2?"#F15A23":selectedTheme==3?"#E2E2E2":selectedTheme==4?"#383838":page.backColorCode)" class="about page-section-ptb">
+    <div class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png"/>
+            </div>
+        }
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <h2 class="mb-20">@page.title</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="who-we-are-right">
+                    @page.leftHtmlContent
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="who-we-are-left">
+                    @page.rightHtmlContent
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

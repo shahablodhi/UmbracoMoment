@@ -1,0 +1,81 @@
+﻿@using MomentWebsite.Web.Business
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+    var theme = page.selectTheme;
+}
+
+@{
+    var selectedTheme = Utility.GetThemeColorMap(theme);
+
+}
+<section id="@page.Id" style="position: relative; overflow: initial; background:@(selectedTheme==1?"#FCD2AC":selectedTheme==2?"#F15A23":selectedTheme==3?"#E2E2E2":selectedTheme==4?"#383838":page.backColorCode)" class="about page-section-ptb">
+    <div class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        <div class="row">
+            <div class="col-lg-9 col-md-8">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2 class="mb-20 ml-10">@page.title</h2>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="who-we-are-right col-lg-10">
+                            @page.leftHtmlContent
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <div class="faq-form">
+                    <h5 class="mb-30">Submit your question</h5>
+                    <div class="section-field">
+                        <label for="firstname">Fornavn*</label>
+                        <div class="field-widget">
+                            <i class="fa fa-user"></i>
+                            <input type="text" placeholder="First Name" name="firstname">
+                        </div>
+                    </div>
+                    <div class="section-field">
+                        <label for="name">Efternavn*</label>
+                        <div class="field-widget">
+                            <i class="fa fa-user"></i>
+                            <input type="text" placeholder="Last Name" name="lastname">
+                        </div>
+                    </div>
+
+                    <div class="section-field">
+                        <label for="email">Stilling*</label>
+                        <div class="field-widget">
+                            <i class="fa fa-envelope"></i>
+                            <input type="text" placeholder="Stilling" name="email">
+                        </div>
+                    </div>
+                    <div class="section-field">
+                        <label for="name">Virkosemmed*</label>
+                        <div class="field-widget">
+                            <i class="fa fa-user"></i>
+                            <input type="text" placeholder="Virkosemmed" name="name">
+                        </div>
+                    </div>
+                    <div class="section-field">
+                        <label for="name">Email*</label>
+                        <div class="field-widget">
+                            <i class="fa fa-user"></i>
+                            <input type="text" placeholder="Email" name="name">
+                        </div>
+                    </div>
+
+                    <a href="#" class="button-border">
+                        <span>Submit</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</section>

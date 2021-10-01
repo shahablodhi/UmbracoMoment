@@ -1,0 +1,130 @@
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\ApplicationInsights.config
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\roslyn\csc.exe
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\roslyn\System.Collections.Immutable.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\roslyn\System.Reflection.Metadata.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\roslyn\vbc.exe
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\roslyn\VBCSCompiler.exe
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\roslyn\VBCSCompiler.exe.config
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\MomentWebsite.Tests.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\MomentWebsite.Tests.pdb
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\MomentWebsite.Web.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\MomentWebsite.Web.pdb
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\obj\Debug\MomentWebsite.Tests.csprojResolveAssemblyReference.cache
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\obj\Debug\MomentWebsite.Tests.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\obj\Debug\MomentWebsite.Tests.pdb
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\AutoMapper.Net4.dll
+E:\MomentWebsite3O\MomentWebsite.Web\MomentWebsite.Tests\bin\Debug\MomentWebsite.Tests.dll.config
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\ApplicationInsights.config
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\roslyn\csc.exe
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\roslyn\System.Collections.Immutable.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\roslyn\System.Reflection.Metadata.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\roslyn\vbc.exe
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\roslyn\VBCSCompiler.exe
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\roslyn\VBCSCompiler.exe.config
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\AutoMapper.Net4.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\MomentWebsite.Tests.dll.config
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\MomentWebsite.Tests.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\MomentWebsite.Tests.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\MomentWebsite.Web.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\MomentWebsite.Web.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\obj\Debug\MomentWebsite.Tests.csprojResolveAssemblyReference.cache
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\obj\Debug\MomentWebsite.Tests.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\obj\Debug\MomentWebsite.Tests.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Microsoft.Owin.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Owin.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Microsoft.Owin.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Web.Mvc.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\umbraco.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\log4net.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\IdentityModel.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Web.Razor.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Web.WebPages.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\businesslogic.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Umbraco.Core.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\interfaces.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\cms.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\umbraco.DataLayer.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\controls.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\ClientDependency.Core.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Examine.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Newtonsoft.Json.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\HtmlAgilityPack.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Net.Http.Formatting.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Web.Http.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Web.Http.WebHost.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Semver.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Lucene.Net.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Microsoft.Owin.Security.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\UmbracoExamine.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Threading.Tasks.Dataflow.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\MarkdownSharp.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\MiniProfiler.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\AutoMapper.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\umbraco.providers.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Microsoft.AspNet.SignalR.Core.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.ValueTuple.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Data.SqlServerCe.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\MySql.Data.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\ImageProcessor.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Log4Net.Async.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\TidyNet.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Web.Mvc.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\umbraco.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\IdentityModel.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Web.Razor.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Web.WebPages.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\businesslogic.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Umbraco.Core.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\interfaces.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\cms.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\umbraco.DataLayer.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\controls.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\ClientDependency.Core.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Examine.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Newtonsoft.Json.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\HtmlAgilityPack.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\HtmlAgilityPack.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Net.Http.Formatting.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Web.Http.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Web.Http.WebHost.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Lucene.Net.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Microsoft.Owin.Security.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\UmbracoExamine.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Threading.Tasks.Dataflow.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\MiniProfiler.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\MiniProfiler.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\AutoMapper.pdb
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\AutoMapper.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\umbraco.providers.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.ValueTuple.xml
+E:\TFS\Moment Website 3O\Main\MomentWebsite.Tests\bin\Debug\System.Web.WebPages.Deployment.xml

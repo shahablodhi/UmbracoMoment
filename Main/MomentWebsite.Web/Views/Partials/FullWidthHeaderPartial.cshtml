@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+}
+<div id="inner-video-background" class="inner-intro @(page.hideOpacity?"bg-opacity-white-50":"") bg-opacity-black-70" style=" width: 100%;" data-vide-bg="@(page.HasValue("mp4")?"mp4: "+ Umbraco.Media(page.mp4.ToString()).umbracoFile:""), @(page.HasValue("webM")?" webm: "+ Umbraco.Media(page.webM.ToString()).umbracoFile:"") , @(page.HasValue("ogv")?" ogv: "+ Umbraco.Media(page.ogv.ToString()).umbracoFile:"") ,  @(page.HasValue("thumbnail")?"poster:" + Umbraco.Media(page.thumbnail.ToString()).umbracoFile: "") " data-vide-options="position: 0% 50%">
+    <div class="container">
+        <div class="row text-center intro-title">
+            <h1 class="text-blue">@page.title</h1>
+            <p class="text-white">@page.subTitle</p>
+            @if (page.subTitle.ToString().Equals(""))
+            {
+                <p>&nbsp;</p>
+            }
+            @Html.Partial("BreadCrumbPartial")
+        </div>
+    </div>
+</div>

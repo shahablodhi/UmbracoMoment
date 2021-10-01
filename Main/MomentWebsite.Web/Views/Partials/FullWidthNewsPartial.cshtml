@@ -1,0 +1,78 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+    var buttonName = "";
+    var buttonUrl = "";
+
+}
+@functions
+{
+    private void SetButtonNameAndUrl(dynamic button, out String name, out String url)
+    {
+        if (button.Length == 0 || button[0] == null || button[1] == null)
+        {
+            name = String.Empty;
+            url = String.Empty;
+            return;
+        }
+        if (button[0].ToString().Contains("/"))
+        {
+            url = button[0].ToString();
+            name = button[1].ToString();
+        }
+        else
+        {
+            url = button[1].ToString();
+            name = button[0].ToString();
+        }
+    }
+
+}
+@{
+    SetButtonNameAndUrl(page.button, out buttonName, out buttonUrl);
+}
+<!--=================================
+portfolio  -->
+
+<section id="@page.Id" style="position: relative; overflow: initial;" class="portfolio-2 white-bg page-section-ptb">
+    <div class="container-fluid">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        <div class="row">
+            <div class="portfolio-main popup-gallery">
+                <div class="portfolio-info">
+                    <h3 class="text-white">@page.title</h3>
+                    <p class="mb-20">
+                        @page.subTitle
+                        <br/>
+                    </p>
+                    <a class="button-border-white" href="@buttonUrl"> <span>@buttonName</span></a>
+                </div>
+                <div class="owl-carousel-8">
+                    @foreach (var imageContent in page.imageContainer)
+                    {
+                        <div class="item">
+                            <div class="portfolio-item">
+                                <img src="@Umbraco.Media(imageContent.image.ToString()).umbracoFile" alt="">
+                                <div class="portfolio-overlay">
+                                    <p>
+                                        <span> <a href="@imageContent.url"> @imageContent.title </a> </span>
+                                        <a class="popup-vimeo" href="@imageContent.url"><i class="fa fa-play"></i></a>
+                                        <a class="link" href="#"><i class="fa fa-link"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=================================
+portfolio-2 -->

@@ -1,0 +1,65 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+    var counter = 0;
+}
+<!--=================================
+ Choose Your Pricing-->
+
+<section id="@page.Id" style="position: relative; overflow: initial;" class="pricing white-bg page-section-pb">
+    <div class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        @*<div class="row">
+        <div class="col-lg-12 col-md-12">
+            <div class="section-title-1 text-center">
+                <h1 class="text-blue">Choose Your Pricing</h1>
+                <div class="title-line"></div>
+                <p>We manage  yor business</p>
+            </div>
+        </div>
+    </div>*@
+        <div class="row">
+            @foreach (var box in page.pricingTable)
+            {
+                <div class="col-lg-3 col-md-3">
+                    <div class="pricing-table @(counter == 1 ? "active" : "") text-center">
+                        @if (counter == 1)
+                        {
+                            <div class="pricing-ribbon">
+                                <img src="~/theme/moment-theme/Template/images/ribbon.png" alt="">
+                            </div>
+                        }
+                        <div class="pricing-title">
+                            <h2 class="@(counter == 1 ? "text-white text-bg" : "")">@box.title</h2>
+                            <span>@box.subTitle</span>
+                            <div class="pricing-prize">
+                                <h2 class="@(counter == 1 ? "text-white" : "text-blue")">@box.price</h2>
+                                <span>@box.period.ToString()</span>
+                            </div>
+                        </div>
+                        <div class="pricing-list">
+                            <ul>
+                                <li class="@((!String.IsNullOrEmpty(box.showGray1.ToString()) && box.showGray1.ToString().Equals("True")) ? (counter == 1 ? "text-light-blue" : "text-gray") : "")">@box.value1</li>
+                                <li class="@((!String.IsNullOrEmpty(box.showGray2.ToString()) && box.showGray2.ToString().Equals("True")) ? (counter == 1 ? "text-light-blue" : "text-gray") : "")">@box.value2</li>
+                                <li class="@((!String.IsNullOrEmpty(box.showGray3.ToString()) && box.showGray3.ToString().Equals("True")) ? (counter == 1 ? "text-light-blue" : "text-gray") : "")">@box.value3</li>
+                                <li class="@((!String.IsNullOrEmpty(box.showGray4.ToString()) && box.showGray4.ToString().Equals("True")) ? (counter == 1 ? "text-light-blue" : "text-gray") : "")">@box.value4</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-order">
+                            <a class="button-border-white" href="@box.buttonUrl"><span>@box.buttonText</span></a>
+                        </div>
+                    </div>
+                </div>
+                counter++;
+            }
+        </div>
+    </div>
+</section>
+
+<!--=================================
+ Choose Your Pricing-->

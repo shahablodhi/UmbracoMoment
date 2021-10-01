@@ -1,0 +1,81 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+    var buttonName = "";
+    var buttonUrl = "";
+
+}
+@functions
+{
+    private void SetButtonNameAndUrl(dynamic button, out String name, out String url)
+    {
+        if (button.Length == 0 || button[0] == null || button[1] == null)
+        {
+            name = String.Empty;
+            url = String.Empty;
+            return;
+        }
+        if (button[0].ToString().Contains("/"))
+        {
+            url = button[0].ToString();
+            name = button[1].ToString();
+        }
+        else
+        {
+            url = button[1].ToString();
+            name = button[0].ToString();
+        }
+    }
+
+}
+@{
+    SetButtonNameAndUrl(page.button, out buttonName, out buttonUrl);
+}
+<!--=================================
+news-letter -->
+<style>
+    
+
+.bg-2 {
+    background: url('@Umbraco.Media(page.backgroundImage.ToString()).umbracoFile');
+    background-clip: initial;
+    background-color: rgba(0, 0, 0, 0);
+    background-origin: initial;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    position: relative;
+    z-index: 0;
+    background-attachment: fixed;
+}
+</style>
+<section id="@page.Id" style="position: relative; overflow: initial;" class="news-letter bg-2 bg-opacity-white-70">
+    <div class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <h1 class="text-blue">@page.title</h1>
+                <p>@page.subTitle</p>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="section-field">
+                    <div class="field-widget">
+                        <i class="fa fa-envelope-o"></i>
+                        <input type="text" name="name" placeholder="@page.placeHolder">
+                        <a href="@buttonUrl" class="button-border pull-right">
+                            <span>@buttonName</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=================================
+news-letter -->

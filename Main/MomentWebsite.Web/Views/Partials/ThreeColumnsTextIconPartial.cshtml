@@ -1,0 +1,59 @@
+﻿@using MomentWebsite.Web.Business
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+    var theme = page.selectTheme;
+}
+
+@{
+    var selectedTheme = Utility.GetThemeColorMap(theme);
+
+}
+<!--=================================
+ About-->
+
+<section style="position: relative; overflow: initial;background:@(selectedTheme==1?"#FCD2AC":selectedTheme==2?"#F15A23":selectedTheme==3?"#E2E2E2":selectedTheme==4?"#383838":page.backColorCode)" id="@page.Id" class="about page-section-ptb">
+    <div class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="feature-3">
+                    <div class="feature-3-title">
+                        <span class="@page.icon1" aria-hidden="true"></span>
+                    </div>
+                    <div class="feature-3-info">
+                        <h3 class="text-back">@page.title1</h3>
+                        <p>@page.text1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="feature-3">
+                    <div class="feature-3-title">
+                        <span class="@page.icon2" aria-hidden="true"></span>
+                    </div>
+                    <div class="feature-3-info">
+                        <h3 class="text-back">@page.title2</h3>
+                        <p>@page.text2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="feature-3">
+                    <div class="feature-3-title">
+                        <span class="@page.icon3" aria-hidden="true"></span>
+                    </div>
+                    <div class="feature-3-info">
+                        <h3 class="text-back">@page.title3</h3>
+                        <p>@page.text3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,72 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@{
+    var page = (dynamic)ViewBag.Page;
+    var buttonName = "";
+    var buttonUrl = "";
+
+}
+@functions
+{
+    private void SetButtonNameAndUrl(dynamic button, out String name, out String url)
+    {
+        if (button.Length == 0 || button[0] == null || button[1] == null)
+        {
+            name = String.Empty;
+            url = String.Empty;
+            return;
+        }
+        if (button[0].ToString().Contains("/"))
+        {
+            url = button[0].ToString();
+            name = button[1].ToString();
+        }
+        else
+        {
+            url = button[1].ToString();
+            name = button[0].ToString();
+        }
+    }
+
+}
+@{
+    SetButtonNameAndUrl(page.actionButton, out buttonName, out buttonUrl);
+}
+<style>
+    .bg-10 {/*page.backImage*/;
+            background: url(@Umbraco.Media(page.backImage.ToString()).umbracoFile);
+    }
+</style>
+
+<!--=================================
+ like what -->
+
+<section id="@page.Id"  style="position: relative; overflow: initial;" class="bg-10 like-what bg-opacity-black-70 page-section-ptb">
+    <div class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-7">
+                <div class="custom-content">
+                    <h3 class="text-white">@page.title</h3>
+                    <b class="text-blue mb-20">@page.subTitle</b>
+                    <p class="text-white">@page.textContent</p>
+                    <a class="button mt-20" href="@buttonUrl">
+                        <span>@buttonName</span>
+                        <i class="fa fa-download"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5">
+                <img class="img-responsive center-block mt-20" src="@Umbraco.Media(page.foreImage.ToString()).umbracoFile" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=================================
+ like what  -->

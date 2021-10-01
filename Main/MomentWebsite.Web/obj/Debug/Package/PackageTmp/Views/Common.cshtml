@@ -1,0 +1,284 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "_LayoutLevelOne.cshtml";
+    
+}
+
+<!--=================================
+ inner-intro-->
+
+<div id="inner-video-background" class="inner-intro bg-opacity-black-70" style="width: 100%;" data-vide-bg="mp4: /theme/moment-theme/Template/video/video-2, webm: /theme/moment-theme/Template/video/video-2, ogv: /theme/moment-theme/Template/video/video-2, poster: /theme/moment-theme/Template/video/video-2" data-vide-options="position: 0% 50%">
+    <div class="container">
+
+        <div class="row text-center intro-title">
+            <h1 class="text-blue">@Umbraco.Field("title")</h1>
+            <p class="text-white">@Umbraco.Field("subTitle")</p>
+@Html.Partial("BreadCrumbPartial")
+        </div>
+    </div>
+</div>
+
+<!--=================================
+ inner-intro-->
+<!--=================================
+ service-->
+<div style="margin-top: 3rem;" class="container">
+    @Umbraco.Field("htmlContent")
+</div>
+
+<section class="service white-bg page-section-ptb">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="section-title-1 text-center">
+                    <h1 class="text-blue">Our Service</h1>
+                    <div class="title-line"></div>
+                    <p>We're offering a full range of services for almost any web-industry related company.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="feature-4">
+                    <span class="icon-pencil" aria-hidden="true"></span>
+                    <h4>Web Designing</h4>
+                    <p class="mt-20">Dolor sit amet, consectetur adipisicing elit. Vero quod conseqt quibusdam, enim expedita sed nesciunt incidunt accusamus necessitatibus modi adipisci officia...</p>
+                    <ul class="feature-4-sec mt-30">
+                        <li><i class="fa fa-angle-right"></i> Web Template(interface) design</li>
+                        <li><i class="fa fa-angle-right"></i> Static website design </li>
+                        <li><i class="fa fa-angle-right"></i> Custom web design </li>
+                        <li><i class="fa fa-angle-right"></i> Web portal design</li>
+                        <li><i class="fa fa-angle-right"></i> Responsive web design </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="feature-4">
+                    <span class="icon-game-controller" aria-hidden="true"></span>
+                    <h4>Apps & Game Development</h4>
+                    <p class="mt-20">Consectetur adipisicing elit. Vero quod conseqt quibusdam, enim expedita incidunt accusamus necessitatibus modi adipisci officia...</p>
+                    <ul class="feature-4-sec mt-30">
+                        <li><i class="fa fa-angle-right"></i> iPhone iOs Apps Development</li>
+                        <li><i class="fa fa-angle-right"></i> Android Apps Development </li>
+                        <li><i class="fa fa-angle-right"></i> Blackberry Apps Development </li>
+                        <li><i class="fa fa-angle-right"></i> Web Apps Development</li>
+                        <li><i class="fa fa-angle-right"></i> Hybrid Apps Development </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="feature-4">
+                    <span class="icon-rocket" aria-hidden="true"></span>
+                    <h4>Seo Analysis & Marketing</h4>
+                    <p class="mt-20">Sit amet, consectetur adipisicing elit. Vero quod quibusdam, enim expedita sed nesciunt incidunt accusamus necessitatibus modi adipisci officia...</p>
+                    <ul class="feature-4-sec mt-30">
+                        <li><i class="fa fa-angle-right"></i> PPC Advertising</li>
+                        <li><i class="fa fa-angle-right"></i> Social Media Marketing </li>
+                        <li><i class="fa fa-angle-right"></i> Email Marketing </li>
+                        <li><i class="fa fa-angle-right"></i> Web Stats and Analysis</li>
+                        <li><i class="fa fa-angle-right"></i> Online Advertising </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=================================
+ service-->
+<!--=================================
+ Services Details -->
+
+<section class="service-page-tab white-bg page-section-pb">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="section-title-1 text-center">
+                    <h1 class="text-blue">Services Details</h1>
+                    <div class="title-line"></div>
+                    <p>Know more about our services</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div id="tabs">
+                    <ul class="tabs">
+                        <li data-tabs="tab1" class="active"> <strong>01</strong> Research</li>
+                        <li data-tabs="tab2"> <strong>02</strong> Design</li>
+                        <li data-tabs="tab3"> <strong>03</strong> Develop</li>
+                        <li data-tabs="tab4"> <strong>04</strong> Result</li>
+                    </ul>
+                    <div id="tab1" class="tabcontent">
+                        <p>Dolor sit amet, consectetur adipisicing elit. Vero quod conseqt quibusdam, <span class="tooltip-content-2" data-original-title="Sed hendrerit enim non justo" data-toggle="tooltip" data-placement="top">Vero quod conseqt</span> enim expedita sed quia nesciunt incidunt accusamus necessitatibus modi adipis official Dolor sit amet, consectetur adipisicing elit. </p>
+                        <p class="mt-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nesciunt amet id fuga, incidunt, quam tempore harum modi consectetur minus odio, sequi assumenda obcaecati aperiam aspernatur. Eaque, incidunt! Natus, nulla?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nesciunt amet id fuga, incidunt. </p>
+                    </div>
+                    <div id="tab2" class="tabcontent">
+                        <p>Dolor sit amet, conseqt quibusdam, enim expedita sed quia nesciunt incidunt accusamus necessitatibus modi adipis official Dolor sit amet, consectetur adipisicing elit. </p>
+                        <p class="mt-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nesciunt amet id fuga, incidunt, quam tempore harum modi consectetur minus odio, sequi assumenda obcaecati aperiam aspernatur. Eaque, incidunt! Natus, nulla?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nesciunt amet id fuga, incidunt adipisicing elit.</p>
+                    </div>
+                    <div id="tab3" class="tabcontent">
+                        <p>Dolor sit amet, consectetur adipisicing elit. Vero quod conseqt quibusdam, <span class="tooltip-content-2" data-original-title="Sed hendrerit enim non justo" data-toggle="tooltip" data-placement="top">Vero quod conseqt</span> enim expedita sed quia nesciunt incidunt accusamus necessitatibus modi adipis official Dolor sit amet, consectetur adipisicing elit. </p>
+                        <p class="mt-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nesciunt amet id fuga, incidunt, quam tempore harum modi consectetur minus odio, sequi assumenda obcaecati aperiam aspernatur. Eaque, incidunt! Natus, nulla?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nesciunt amet id fuga, incidunt adipisicing elit.</p>
+                    </div>
+                    <div id="tab4" class="tabcontent">
+                        <p>Dolor sit amet, conseqt quibusdam, enim expedita sed quia nesciunt incidunt accusamus necessitatibus modi adipis official Dolor sit amet, consectetur adipisicing elit. </p>
+                        <p class="mt-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nesciunt amet id fuga, incidunt, quam tempore harum modi consectetur minus odio, sequi assumenda obcaecati aperiam aspernatur. Eaque, incidunt! Natus, nulla?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nesciunt amet id fuga, incidunt adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <video style="width:100%;height:100%;" poster="~/theme/moment-theme/Template/video/video-1.jpg" controls="controls" preload="none">
+                    <source type="video/mp4" src="~/theme/moment-theme/Template/video/video-1.mp4" />
+                    <source type="video/webm" src="~/theme/moment-theme/Template/video/video-1.webm" />
+                    <source type="video/ogg" src="~/theme/moment-theme/Template/video/video-1.ogv" />
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=================================
+ Services Details-->
+<!--=================================
+ Choose Your Pricing-->
+
+<section class="pricing white-bg page-section-pb">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="section-title-1 text-center">
+                    <h1 class="text-blue">Choose Your Pricing</h1>
+                    <div class="title-line"></div>
+                    <p>We manage  yor business</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="pricing-table text-center">
+                    <div class="pricing-title">
+                        <h2>Standard</h2>
+                        <span>Starting at</span>
+                        <div class="pricing-prize">
+                            <h2 class="text-blue">19.99 $</h2>
+                            <span>Per month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-list">
+                        <ul>
+                            <li>Wordpress</li>
+                            <li>HTML5 & CSS 3</li>
+                            <li class="text-gray">PSD Files</li>
+                            <li class="text-gray">Unlimited Support</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-order">
+                        <a class="button-border-white" href="#"><span>Order Now!</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="pricing-table active text-center">
+                    <div class="pricing-ribbon">
+                        <img src="~/theme/moment-theme/Template/images/ribbon.png" alt="">
+                    </div>
+                    <div class="pricing-title">
+                        <h2 class="text-white text-bg">Medium</h2>
+                        <span>Starting at</span>
+                        <div class="pricing-prize">
+                            <h2 class="text-white">49.99 $</h2>
+                            <span>Per month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-list">
+                        <ul>
+                            <li>Wordpress</li>
+                            <li class="text-light-blue">HTML5 & CSS 3</li>
+                            <li>PSD Files</li>
+                            <li class="text-light-blue">Unlimited Support</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-order">
+                        <a class="button-border-white" href="#"><span>Order Now!</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="pricing-table text-center">
+                    <div class="pricing-title">
+                        <h2>Premium</h2>
+                        <span>Starting at</span>
+                        <div class="pricing-prize">
+                            <h2 class="text-blue">79.99 $</h2>
+                            <span>Per month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-list">
+                        <ul>
+                            <li>Wordpress</li>
+                            <li>HTML5 & CSS 3</li>
+                            <li class="text-gray">PSD Files</li>
+                            <li>Unlimited Support</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-order">
+                        <a class="button-border-white" href="#"><span>Order Now!</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="pricing-table pricing-table-border text-center">
+                    <div class="pricing-title">
+                        <h2>Ultimate</h2>
+                        <span>Starting at</span>
+                        <div class="pricing-prize">
+                            <h2 class="text-blue">99.99 $</h2>
+                            <span>Per month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-list">
+                        <ul>
+                            <li>Wordpress</li>
+                            <li>HTML5 & CSS 3</li>
+                            <li>PSD Files</li>
+                            <li>Unlimited Support</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-order">
+                        <a class="button-border-white" href="#"><span>Order Now!</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=================================
+ Choose Your Pricing-->
+<!--=================================
+ action-box -->
+
+<section class="action-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8">
+                <h3 class="text-white">The Corps Unique & Clean HTML5 Multi-Purpose Template</h3>
+                <p class="text-white">We are a creative company, who works with passion and love. We provide the best services you need. </p>
+            </div>
+            <div class="col-lg-4 col-md-4 text-right action-box-button">
+                <a href="#" class="button button-white mt-15">
+                    <span>More Demo</span>
+                    <i class="fa fa-hand-o-right"></i>
+                </a>
+                <a href="#" class="button button-black mt-15">
+                    <span>Purchase Now</span>
+                    <i class="fa fa-download"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--=================================
+ action-box -->

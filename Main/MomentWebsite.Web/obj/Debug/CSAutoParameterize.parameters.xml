@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="umbracoDbDSN-Web.config Connection String" description="umbracoDbDSN Connection String used in web.config by the application to access the database." defaultValue="server=192.168.18.22;database=MomentWebsite3OUm7;user id=biuser;password='TestWord'" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\TFS\\Moment\ Website\ 3O\\Main\\MomentWebsite\.Web\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='umbracoDbDSN']/@connectionString" />
+  </parameter>
+</parameters>

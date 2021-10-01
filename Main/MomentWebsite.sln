@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MomentWebsite.Web", "MomentWebsite.Web\MomentWebsite.Web.csproj", "{AFB4C16B-C51D-4F59-A12F-B7D467E13A44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MomentWebsite.Tests", "MomentWebsite.Tests\MomentWebsite.Tests.csproj", "{45279E9D-DEB4-406D-AB9F-CAE611000C3A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7D8F51F8-7BA6-4947-8362-6373BEDDB5EA}"
+	ProjectSection(SolutionItems) = preProject
+		WebEssentials2015-Settings.json = WebEssentials2015-Settings.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Staging|Any CPU = Staging|Any CPU
+		Test|Any CPU = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFB4C16B-C51D-4F59-A12F-B7D467E13A44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFB4C16B-C51D-4F59-A12F-B7D467E13A44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFB4C16B-C51D-4F59-A12F-B7D467E13A44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFB4C16B-C51D-4F59-A12F-B7D467E13A44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFB4C16B-C51D-4F59-A12F-B7D467E13A44}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{AFB4C16B-C51D-4F59-A12F-B7D467E13A44}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{AFB4C16B-C51D-4F59-A12F-B7D467E13A44}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{AFB4C16B-C51D-4F59-A12F-B7D467E13A44}.Test|Any CPU.Build.0 = Test|Any CPU
+		{45279E9D-DEB4-406D-AB9F-CAE611000C3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45279E9D-DEB4-406D-AB9F-CAE611000C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45279E9D-DEB4-406D-AB9F-CAE611000C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45279E9D-DEB4-406D-AB9F-CAE611000C3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45279E9D-DEB4-406D-AB9F-CAE611000C3A}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{45279E9D-DEB4-406D-AB9F-CAE611000C3A}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{45279E9D-DEB4-406D-AB9F-CAE611000C3A}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{45279E9D-DEB4-406D-AB9F-CAE611000C3A}.Test|Any CPU.Build.0 = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://moment.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MomentWebsite.Tests\\MomentWebsite.Tests.csproj
+		SccProjectName1 = MomentWebsite.Tests
+		SccLocalPath1 = MomentWebsite.Tests
+		SccProjectUniqueName2 = MomentWebsite.Web\\MomentWebsite.Web.csproj
+		SccProjectName2 = MomentWebsite.Web
+		SccLocalPath2 = MomentWebsite.Web
+	EndGlobalSection
+EndGlobal

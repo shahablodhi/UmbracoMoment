@@ -1,0 +1,156 @@
+.header-3 {
+    padding: 0;
+    width: 100%;
+    z-index: 1000;
+    position: static;
+}
+
+    .header-3 .mega-menu section.menu-list-items {
+        padding: 0;
+        background: transparent;
+    }
+
+.active > a {
+    color: #ff5500 !important;
+}
+
+.modal-backdrop {
+    z-index: 999;
+}
+
+.menu {
+    height: 9.1rem;
+}
+
+.multiselect-container {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.custom-heading {
+    font-weight: 900;
+    color: #ff5500;
+}
+
+.custom-hr {
+    margin: 1rem 0;
+    padding: 0px;
+    border-bottom: 1px groove lightgray;
+    border-top: 0px;
+}
+
+.custom-button {
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.custom-button-important {
+    padding: 1rem 3rem 1rem 3rem !important;
+}
+
+.custom-anchor-light {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.7em;
+    color: white;
+    padding: 0 12px;
+}
+
+.custom-label-light {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.7em;
+}
+
+.custom-anchor-heavy {
+    font-size: 1em;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    padding: 0 12px;
+}
+
+.custom-button-footer {
+    background: transparent;
+    border: transparent;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.custom-span {
+    color: white;
+    border-color: white;
+    border-radius: 0;
+}
+/*kendo styles*/
+.k-grouping-header {
+    background: #ff5500;
+}
+
+#pageContent {
+    margin-top: -2rem;
+}
+
+.custom-color-darkgrey {
+    background: #383838 !important;
+    color: white !important;
+}
+
+.custom-color-lightgrey {
+    background: #E2E2E2 !important;
+    color: white !important;
+}
+
+.custom-color-orange {
+    background: #F15A22 !important;
+    color: white !important;
+}
+
+.custom-color-orange-outlined {
+    background: #F15A22 !important;
+    color: white !important;
+    box-shadow: 0 0 0 1px white inset !important;
+}
+
+.custom-color-lightorange {
+    background: #FCD2AD !important;
+    color: white !important;
+}
+
+.custom-size-60pt {
+    font-size: 60pt;
+}
+
+.custom-fontcolor-lightgrey {
+    color: #E2E2E2 !important;
+}
+
+.theme-darkorange {
+    background: #F15A22 !important;
+}
+
+    .theme-darkorange h1, .theme-darkorange h2, .theme-darkorange span, .theme-darkorange p {
+        color: white !important;
+    }
+
+.theme-lightorange {
+    background: #FCD2AD !important;
+}
+
+    .theme-lightorange h1, .theme-lightorange h2, .theme-lightorange span, .theme-lightorange p {
+        color: #F15A22 !important;
+    }
+
+.overlay-stripes {
+    position: absolute;
+    top: -5vw;
+    width: 33%;
+    right: 15px;
+}
+/*media query section*/
+@media (min-width: 769px) {
+    .custom-flex-center {
+        display: flex;
+        align-items: center;
+    }
+}

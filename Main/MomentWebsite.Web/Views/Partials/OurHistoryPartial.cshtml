@@ -1,0 +1,66 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+    var counter = 1;
+}
+<style>
+    .bg-1 {
+    background: url('@Umbraco.Media(page.backgroundImage.ToString()).umbracoFile');
+    background-attachment: fixed;
+    background-clip: initial;
+    background-color: rgba(0, 0, 0, 0);
+    background-origin: initial;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    position: relative;
+    z-index: 0;
+    }
+</style>
+<!--=================================
+ Our History -->
+
+<section id="@page.Id" style="position: relative; overflow: initial;" class="our-history bg-1 bg-opacity-black-70 page-section-ptb">
+    <div class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="section-title-1 text-center">
+                    <h1 class="text-blue">@page.title</h1>
+                    <div class="title-line"></div>
+                    <p class="text-white">@page.subTitle</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="history-main">
+                    <div class="history-content">
+                        @foreach (var item in page.history)
+                        {
+                            <div class="history-@counter">
+                                <div class="history-time-lin"> </div>
+                                <div class="@(counter > 4 ? "history-line" : "history-line-2")"> </div>
+                                <div class="@(counter > 4 ? "history-item" : "history-item-2")">
+                                    <a href="javascript:void(0)" class="tooltip-content" data-toggle="tooltip" data-placement="top" data-original-title="@item.subTitle">@item.title</a>
+                                </div>
+                            </div>
+                            counter++;
+                        }
+                        <div class="liner">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=================================
+ Our History -->

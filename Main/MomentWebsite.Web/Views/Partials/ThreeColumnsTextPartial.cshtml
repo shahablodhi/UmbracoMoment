@@ -1,0 +1,52 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+}
+<!--=================================
+ service-->
+
+<section id="@page.Id" style="position: relative; overflow: initial;" class="service white-bg page-section-ptb">
+    <div class="container">
+        @if (page.showStripes)
+        {
+            <div class="overlay-stripes">
+                <img class="img-responsive" src="~/theme/moment-theme/Template/images/lines_full.png" />
+            </div>
+        }
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="section-title-1 text-center">
+                    <h1 class="text-blue">@page.title</h1>
+                    <div class="title-line"></div>
+                    <p>@page.subTitle</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="feature-4">
+                    <span class="@page.icon1" aria-hidden="true"></span>
+                    <h4>@page.title1</h4>
+                    @page.htmlContent1
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="feature-4">
+                    <span class="@page.icon2" aria-hidden="true"></span>
+                    <h4>@page.title2</h4>
+                    @page.htmlContent2
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="feature-4">
+                    <span class="@page.icon3" aria-hidden="true"></span>
+                    <h4>@page.title3</h4>
+                    @page.htmlContent3
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--=================================
+ service-->

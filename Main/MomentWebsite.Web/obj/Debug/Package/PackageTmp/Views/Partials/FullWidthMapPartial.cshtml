@@ -1,0 +1,15 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var page = (dynamic)ViewBag.Page;
+}
+<!--=================================
+ contact map -->
+
+<section id="@page.Id" class="contact-map clearfix">
+    <div class="container-fluid">
+        <iframe src="@page.googleMapUrl.ToString().Trim()" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</section>
+
+<!--=================================
+ contact map -->

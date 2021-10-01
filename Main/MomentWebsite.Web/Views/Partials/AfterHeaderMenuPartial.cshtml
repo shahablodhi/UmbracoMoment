@@ -1,0 +1,73 @@
+﻿@using System.Configuration
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var root = CurrentPage.AncestorOrSelf(1);
+    var childrenCount = root.Children.Where("Visible").Count();
+    var counter = 0;
+    var redirectUrl = ConfigurationManager.AppSettings["OldSiteUrl"];
+}
+<style>
+    .custom-anchor {
+        font-family: "Open Sans", sans-serif;
+        font-size: 0.74em;
+        color: #323232;
+        padding: 0 12px;
+    }
+
+    .flex-center {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<div id="menu-group">
+
+    @foreach (var rootNode in root.Children.Where("Visible"))
+    {
+        var hideInNavigation = (rootNode.hideInNavi == true);
+        if (!hideInNavigation)
+        {
+            <div id="headerContent-@counter" class="collapse">
+                <br />
+                <div class="container pb-20">
+                    <div class="row">
+                        <div class="col-md-1">&nbsp;</div>
+                        <div class="flex-center">
+                            @foreach (var family in rootNode.Children.Where("Visible"))
+                            {
+                                <div class="col-md-3 ">
+                                    <a href="@family.Url" style="font-weight: 600" class="custom-anchor">
+                                        @family.Name
+                                    </a>
+                                    <ul style="">
+                                        @foreach (var outerItem in family.Children.Where("Visible"))
+                                        {
+                                            if (outerItem.hideInNavi != true && !outerItem.DocumentTypeAlias.ToString().Equals("panorama_spacing_20px"))
+                                            {
+                                                var link = family.Url+"#"+outerItem.Id;
+                                                if (outerItem.Name == "Find nyt job")
+                                                {
+                                                    link = redirectUrl + "/find-job/";
+                                                }
+                                                else if (outerItem.Name == "High Performers")
+                                                {
+                                                    link = redirectUrl + "/login?hpApp=1";
+                                                }
+                                                <li>
+                                                    <a class="custom-anchor" href="@link">@outerItem.Name </a>
+                                                </li>
+                                            }
+                                        }
+                                    </ul>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <br />
+            </div>
+        }
+        //counter should be same as header partial counter
+        counter++;
+        counter++;
+    }
+</div>
